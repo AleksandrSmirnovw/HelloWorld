@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+		
+	background-color:rgb(61, 45, 45);
+}
+
+#logo{
+	width:60px;
+	height:60px;
+	margin:20px;
+}
+
+#title_site{
+    float: right;
+    margin: 25px;
+}
+
+
+/* Верхняя навигационная панель */
+
+
+.navigacion-conteiner{
+	display: flex;
+	background-color: #520852;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a{
+	display: block;
+	text-decoration: none;
+	padding: 1em;
+    color: rgb(34, 108, 173);
+}
+
+.nav-list input{
+    display: block;
+
+    padding: 1em;
+}
+
+.nav-list a:hover{
+    background-color: #6e196e;
+}
+
+.nav-btn {
+    display: none;
+}
+
+@media(max-width:800px){
+	.nav-list{
+		display: none;
+	}
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: none;
+        background-color: #520852;
+        color: rgb(34, 108, 173);
+        display: block;
+        cursor: pointer;
+    }
+    .nav-btn:hover {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: none;
+        background-color: #6e196e;
+        color: rgb(34, 108, 173);
+        display: block;
+        cursor: pointer;
+    }
+    .drop:hover .nav-list{
+        display: block;
+        position: absolute;
+        background-color: #520852;
+    }
+}
+
+/* Регистрационная панель */
+
+.registration_bar{
+    padding: 16px;
+    background-color: rgb(35, 27, 146);
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+hr {
+    border: 1px solid #520852;
+    margin-bottom: 25px;
+}
+
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity:1;
+}
+  
